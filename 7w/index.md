@@ -86,13 +86,13 @@ for node in $N1 $N2 $N3; do ssh ec2-user@$node hostname; done
 > AWS 리소스를 K8S CRD 를 이용하여 직접 정의 하고 사용할수 있는 K8s Controller 라고 보면 될듯하다. 
 > AWS 리소스의 예시는 S3, VPC 등을 이야기 한다. 
 
-![ACK-Diagram](/7w/images/ack-diagram.png)
+![ACK-Diagram](./7w/images/ack-diagram.png)
 
 * ACK 는 AWS 리소스 별로 Controller 가 구성이 되어있으며 각 리소스 별로 어떤 컨트롤러는 GA, 어떤 컨트롤러는 Preview 상태로 되어있다. 
 * [서비스 상태](https://aws-controllers-k8s.github.io/community/docs/community/services/) 는 링크를 확인해서 사용이 가능한가 판단 하면 될듯하다.
 * 권한에 대하여는 아래와 같은 그림으로 권한을 요청하고 있다.
 
-![ACK-perm-Diagram](/7w/images/ack-permission-diagram.png)
+![ACK-perm-Diagram](./7w/images/ack-permission-diagram.png)
 
 ### ACK S3 Controller 설치 
 
